@@ -1,0 +1,731 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.dot-logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: "Krona One", serif;
+  font-size: 22px;
+  text-decoration: none;
+  padding: 10px 5px;
+}
+
+.dot-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: auto;
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(1px);
+  z-index: 999;
+  padding: 10px 20px;
+}
+
+.dot-navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dot-navbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  font-size: 1rem;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.dot-navbar-container .dot-navbar-menu {
+  list-style: none;
+}
+
+.dot-navbar-container .dot-navbar-menu li a {
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.dot-navbar-container .dot-navbar-menu li a:hover {
+  padding: 10px 20px;
+  background-color: antiquewhite;
+  color: black;
+}
+
+.dot-navbar-logo {
+  height: 5rem;
+  width: auto;
+  margin: 0 3rem;
+}
+
+.dot-navbar-toggle {
+  display: none;
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+}
+
+.dot-bar {
+  display: block;
+  background-color: white;
+  height: 3px;
+  width: 25px;
+  margin: 5px auto;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+/* HERO SECTION */
+
+.dot-hero {
+  height: 80vh;
+  width: 100%;
+  background: url("./pictures-aboutus/first.png") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -80px;
+}
+
+.dot-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.dot-hero-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.dot-hero-content h1 {
+  margin-top: 1.2rem;
+  font-size: 6rem;
+  margin-bottom: 1rem;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+.dot-hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.dot-hero-content button {
+  padding: 15px 90px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 1.2rem;
+  transition: all ease-in 0.25s;
+}
+
+.dot-hero-content button:hover {
+  background-color: #6373ae;
+  border: 1px solid #6373ae;
+  transform: scale(1.1);
+}
+
+.subtext {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.subtext p {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+  max-width: 800px;
+}
+
+.who {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  gap: 100px;
+}
+
+.who-content {
+  max-width: 500px;
+}
+
+.who-content h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 0;
+}
+.who-we-are-text p {
+  width: auto;
+  height: auto;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  text-align: left;
+  margin-top: 25px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.who-img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  position: static;
+}
+
+.who-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.contact-us {
+  background-color: #6373ae;
+  border: none;
+  color: white;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  padding: 15px 32px;
+  margin-top: 30px;
+  position: static;
+  display: inline-block;
+  text-decoration: none;
+}
+.contact-us:hover {
+  background-color: #384572;
+}
+
+.button:active {
+  background-color: #384572;
+  transform: translateY(4px);
+}
+
+.mission-offer {
+  text-align: center;
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+.mission-content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  margin-top: 50px;
+}
+
+.mission-img {
+  width: 48%;
+  height: auto;
+  margin: 0;
+  position: static;
+}
+
+.mission-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.text-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.mission {
+  text-align: left;
+  margin-top: 0;
+  overflow: visible;
+}
+
+.mission h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: left;
+  margin-top: 80;
+  margin-right: 0;
+}
+
+.mission p {
+  width: auto;
+  height: auto;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  margin-left: 0;
+  line-height: 1.5;
+  margin-top: 30px;
+  text-align: justify;
+}
+
+.offer {
+  text-align: left;
+  margin-top: 40px;
+}
+
+.offer h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: left;
+  margin-top: 0;
+  margin-right: 0;
+}
+
+.offer ul {
+  width: auto;
+  height: auto;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  margin-left: 0;
+  line-height: 2;
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+.build {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
+  gap: 100px;
+}
+
+.build h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: left;
+  margin-left: 0;
+  position: static;
+}
+
+.build p {
+  width: auto;
+  height: auto;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  margin-left: 0;
+  text-align: left;
+  position: static;
+  line-height: 1.5;
+  margin-top: 30px;
+  text-align: justify;
+}
+
+.build-img {
+  width: 1900px;
+  height: auto;
+  margin-left: 0;
+  position: static;
+}
+
+.build-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.vision h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  margin-left: 0;
+  position: static;
+  margin-top: 30px;
+}
+
+.vision p {
+  width: auto;
+  height: auto;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  margin-left: 0;
+  line-height: 1.5;
+  margin-top: 30px;
+  text-align: justify;
+}
+
+.footer {
+  background-color: #6373ae;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+
+.title {
+  text-align: justify;
+}
+
+.logo-content {
+  font-size: small;
+}
+
+.privacy,
+.products-footer,
+.about-us,
+.contact {
+  text-align: justify;
+  font-size: medium;
+  padding-top: 10px;
+}
+
+.products-footer {
+  text-align: justify;
+  font-size: medium;
+  padding-top: 10px;
+}
+
+.btn2 {
+  color: white;
+  padding: 10px 30px;
+  border-radius: 25px;
+  border: 1px solid white;
+  background-color: #6373ae;
+  font-family: "Inter", sans-serif;
+  display: block;
+}
+
+.btn2:hover {
+  background-color: #4b5d8c;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 880px) {
+  .dot-hero {
+    height: 70vh;
+  }
+
+  .dot-hero-content {
+    padding: 10px;
+  }
+
+  .dot-hero-content h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+
+  .dot-hero-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .dot-hero-content button {
+    padding: 12px 40px;
+    font-size: 0.9rem;
+  }
+
+  .subtext p {
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+
+  .who-we-are-text p {
+    line-height: 2;
+    margin-bottom: 8px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .mission p {
+    line-height: 2;
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
+
+  .build-together p {
+    line-height: 2;
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
+
+  .offer h1 {
+    margin-bottom: 35px;
+    text-align: center;
+  }
+
+  .offer ul {
+    list-style: none;
+  }
+
+  .dot-navbar-container .dot-navbar-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.7rem !important;
+    position: absolute;
+    width: 250px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    padding: 5rem 1.5rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .dot-navbar-container .dot-navbar-menu li a {
+    color: white;
+  }
+  .dot-navbar-toggle {
+    display: block;
+    z-index: 1000;
+  }
+
+  .dot-navbar-container .dot-navbar-menu.active {
+    display: flex;
+  }
+
+  .dot-navbar-toggle.active .dot-bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .dot-navbar-toggle.active .dot-bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    background-color: white;
+  }
+
+  .dot-navbar-toggle.active .dot-bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    background-color: white;
+  }
+
+  .dot-navbar-search {
+    width: 60%;
+  }
+
+  .who,
+  .build {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .who-content {
+    order: 1;
+    text-align: center;
+  }
+
+  .who-content h1 {
+    text-align: center;
+    margin-top: none;
+  }
+
+  .contact-us {
+    margin: 20px auto 0;
+  }
+
+  .mission-content-wrapper {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .mission-img,
+  .build-img,
+  .text-content-wrapper {
+    width: 100%;
+  }
+
+  .mission h1 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .mission p,
+  .offer ul {
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  .mission-img {
+    order: -1;
+    margin-bottom: 30px;
+  }
+
+  .build h1,
+  .build p {
+    text-align: center;
+  }
+
+  .vision h1 {
+    font-weight: bold;
+    margin-top: 40px;
+  }
+
+  .vision p {
+    text-align: center;
+    line-height: 2;
+    margin-top: 50px;
+  }
+}
+
+.dot-navbar-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.dot-navbar-toggle.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: white;
+}
+
+.dot-navbar-toggle.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: white;
+}
+
+img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.section-bg {
+  background-color: #e9dcd3;
+  padding: 60px 20px;
+  border-radius: 12px;
+  border-radius: none;
+}
+
+
+.footer {
+  background: linear-gradient(135deg, #1d274b, #6373ae);
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+
+.title {
+  text-align: justify;
+}
+
+.logo-content {
+  font-size: small;
+}
+
+.privacy,
+.products-footer,
+.about-us,
+.contact {
+  text-align: justify;
+  font-size: medium;
+  padding-top: 10px;
+}
+
+.products-footer {
+  text-align: justify;
+  font-size: medium;
+  padding-top: 10px;
+}
+
+.btn2 {
+  color: white;
+  padding: 10px 30px;
+  border-radius: 25px;
+  border: 1px solid white;
+  background-color: #6373ae;
+  font-family: "Inter", sans-serif;
+  display: block;
+  margin: 0 auto;
+}
+
+.contact p {
+  text-align: center;
+}
+
+.btn2:hover {
+  background-color: #4b5d8c;
+  cursor: pointer;
+  color: white;
+}
+
+.success {
+  background-color: #84b184;
+  border: 1px solid green;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding: 30px 16px;
+  }
+
+  .footer > div {
+    max-width: 100%;
+    min-width: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 12px;
+    gap: 12px;
+  }
+
+  .footer > div {
+    padding: 0 6px;
+  }
+}
+
+.products-footer a, .about-us a{
+text-decoration: none;
+color: white;
+}
