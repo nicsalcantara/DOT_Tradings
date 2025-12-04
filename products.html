@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple starter HTML page" />
+    <title>Products</title>
+
+    <link rel="stylesheet" href="styles-products.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Krona One"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="dot-navbar">
+      <div class="dot-navbar-container">
+        <a href="./pictures-products/PRODUCTS_HEADER.jpg" class="dot-logo">DOT TRADING</a>
+
+        <button class="dot-navbar-toggle">
+          <span class="dot-bar"></span>
+          <span class="dot-bar"></span>
+          <span class="dot-bar"></span>
+        </button>
+
+        <ul class="dot-navbar-menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="aboutus.html">ABOUT US</a></li>
+          <li><a href="products.html" class="dot-active">PRODUCTS</a></li>
+          <li><a href="contacts.html">CONTACTS</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="dot-hero">
+      <div class="dot-hero-content">
+        <h1>PRODUCTS</h1>
+      </div>
+    </section>
+
+    <div id="materialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- ITEM 1 -->
+        <div class="carousel-item active">
+          <div class="container py-5">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <h2 class="fw-bold">Hollow Blocks</h2>
+                <p class="lead">
+                  Durable, lightweight blocks ideal for walls and partitions,
+                  offering strength, thermal insulation, and soundproofing for
+                  modern construction.
+                </p>
+                <button class="carousel-button">Learn More</button>
+              </div>
+
+              <div class="col-md-6 text-center">
+                <img
+                  src="./pictures-products/Hollow_Blocks.jpg"
+                  class="img-fluid rounded"
+                  alt="Hollow Blocks"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="carousel-item">
+          <div class="container py-5">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <h2 class="fw-bold">Cement</h2>
+                <p class="lead">
+                  Versatile cement for driveways, pathways, and gardens,
+                  providing both functionality and an attractive finish.
+                </p>
+                <button class="carousel-button">Learn More</button>
+              </div>
+
+              <div class="col-md-6 text-center">
+                <img src="./pictures-products/CEMENT.webp" class="img-fluid rounded" alt="Gravel" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="carousel-item">
+          <div class="container py-5">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <h2 class="fw-bold">Steel Bars</h2>
+                <p class="lead">
+                  High-quality reinforcement bars that enhance concrete
+                  structures with superior tensile strength and long-lasting
+                  stability.
+                </p>
+                <button class="carousel-button">Learn More</button>
+              </div>
+
+              <div class="col-md-6 text-center">
+                <img
+                  src="./pictures-products/STEEL_BARS.jpg"
+                  class="img-fluid rounded"
+                  alt="Natural Stones"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#materialCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#materialCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <div class="header-items">LIST OF ITEMS</div>
+
+    <div class="dot-main-div">
+      <section class="dot-shop-section">
+        <div class="dot-shop-grid">
+          <div class="dot-shop-item">
+            <img src="./pictures-products/hollow block.png" alt="" />
+            <p>Hollow Blocks</p>
+          </div>
+
+          <div class="dot-shop-item">
+            <img src="./pictures-products/CEMENT.webp" alt="" />
+            <p>Cement</p>
+          </div>
+
+          <div class="dot-shop-item">
+            <img src="./pictures-products/PEBBLES.jpg" alt="" />
+            <p>Landscape Pebbles</p>
+          </div>
+
+          <div class="dot-shop-item">
+            <img src="./pictures-products/CONCRETE_PIPES.jpg" alt="" />
+            <p>Concrete Pipes</p>
+          </div>
+
+          <div class="dot-shop-item">
+            <img src="./pictures-products/gravel.jfif" alt="" />
+            <p>Landscape Gravel</p>
+          </div>
+
+          <div class="dot-shop-item">
+            <img src="./pictures-products/DECORATIVE_HOLLOW_BLOCKS.jpg" alt="" />
+            <p>Decorative Hollow Blocks</p>
+          </div>
+
+          <div class="dot-shop-item">
+            <img src="./pictures-products/STEEL_BARS.jpg" alt="" />
+            <p>Steel Bar</p>
+          </div>
+
+          <div class="dot-shop-item">
+            <img src="./pictures-products/COCO_LUMBER.jpg" alt="" />
+            <p>Coco Lumber</p>
+          </div>
+
+          <div class="dot-shop-item">
+            <img src="./pictures-products/WHITE_SAND.jpg" alt="" />
+            <p>White Sand</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="featured-section py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="feature-card text-center">
+              <img src="./pictures-products/WIRES_CABLES.png" class="feature-img" alt="" />
+              <h5 class="fw-bold mt-3">Wires and Cables</h5>
+              <p class="desc">
+                Reliable, durable wires and cables for safe and efficient power
+                delivery.
+              </p>
+              <button class="feature-feature-btn">Learn More</button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="feature-card text-center">
+              <img src="./pictures-products/FUSE_BOX.webp" class="feature-img" alt="" />
+              <h5 class="fw-bold mt-3">Circuit Breaker and Fuse Box</h5>
+              <p class="desc">
+                Protect your property with high-quality circuit breakers and
+                fuse boxes.
+              </p>
+              <button class="feature-feature-btn">Learn More</button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="feature-card text-center">
+              <img src="./pictures-products/SWITCH_OUTLET.webp" class="feature-img" alt="" />
+              <h5 class="fw-bold mt-3">Switches and Outlet</h5>
+              <p class="desc">
+                Stylish, safe switches and outlets for easy, secure power
+                access.
+              </p>
+              <button class="feature-feature-btn">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="scroll-banner">
+      <div class="scroll-content">
+        <span>Construction Materials </span>
+        <span>Hollow Blocks</span>
+        <span>Gravel & Sand </span>
+        <span>Landscaping Stones </span>
+
+        <span>Construction Materials </span>
+        <span>Hollow Blocks </span>
+        <span>Gravel & Sand </span>
+        <span>Landscaping Stones </span>
+      </div>
+    </div>
+
+    <div class = "footer">
+        <div class = "title">
+            <p class="logo">DOT TRADINGS</p>
+            <P class="logo-content">© 2025 D.O.T Trading. All rights reserved.</P>
+            <p class="logo-content">Email: RTimbang10@gmail.com</p>
+            <p class="logo-content">Tel: 8401 - 2576</p>
+        </div>
+        <div class = "privacy">
+            <p><b>PRIVACY</b></p>
+            <p>Terms of Use</p>
+            <p>Privacy Policy</p>
+            <p>Cookies</p>
+        </div>
+        <div class = "products-footer">
+            <p><b><a href = "products.html">PRODUCTS</a></b></p>
+            <p><a href = "products.html">List of Items</a></p>
+        </div>
+        <div class = "about-us">
+            <p><b><a href = "aboutus.html">ABOUT US</a></b></p>
+            <p>Find Location</p>
+            <p>Our Story</p>
+        </div>
+
+      <div class="contact">
+        <p><b>SIGN UP FOR UPDATES</b></p>
+
+        <form>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="example@gmail.com">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div><br>
+                    <span id="message"></span>
+                    <button type = "submit" class="btn2" id="btn3">Subscribe</button>
+                </div>
+            </form>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script-products.js"></script>
+  </body>
+</html>
